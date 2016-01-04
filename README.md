@@ -4,9 +4,15 @@ Proving "If it's stupid but it works, it's not stupid" wrong since January 4th, 
 
 Requirements
 ---
+Python packages:
+
 Flask (I'm running Python 3.4, but any version that supports Flask should work.)
 sniffer
+
+Linux binaries:
+
 xdotool
+curl
 
 Usage
 ---
