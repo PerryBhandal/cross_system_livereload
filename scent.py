@@ -1,5 +1,4 @@
-RELOAD_IP = "192.168.1.11"
-RELOAD_PORT = 5000
+import config
 
 from sniffer.api import * # import the really small API
 import os, termstyle
@@ -42,5 +41,6 @@ def src_files(filename):
 # This example simply runs nose.
 @runnable
 def execute_nose(*args):
-    curl_call = "curl %s:%d/reload" % (RELOAD_IP, RELOAD_PORT)
+    curl_call = "curl %s:%d/reload" % (config.RELOAD_IP, config.RELOAD_PORT)
     subprocess.call(curl_call.split(" "))
+    return True
