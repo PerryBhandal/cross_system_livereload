@@ -6,19 +6,19 @@ Requirements
 ---
 Python packages:
 
-Flask (I'm running Python 3.4, but any version that supports Flask should work.)
-sniffer
+- Flask (I'm running Python 3.4, but any version that supports Flask should work.)
+- sniffer
 
 Linux binaries:
 
-xdotool
-curl
+- xdotool
+- curl
 
 Usage
 ---
 Cross System LiveReload has two components:
 
-client.py - Run this on the system that you want to live reload changes onn. Have a browser pointing to the page you wish to live reload and ensure xdotool is installed.
+client.py - Run this on the system that you want to live reload changes on. Have a browser pointing to the page you wish to live reload and ensure xdotool is installed.
 
 scent.py - This is a script for sniffer. Modify it to include the appropriate watch paths/extensions and set the client's IP address.
 
